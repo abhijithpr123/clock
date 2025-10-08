@@ -38,3 +38,46 @@
 .num10{--rotation:300deg;}
 .num11{--rotation:330deg;}
 .num12{--rotation:360deg;}
+
+.hand{
+    --rotation:0;
+    position: absolute;
+    width: 10px;
+    height: 40%;
+    left: 50%;
+    bottom: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    transform-origin: bottom;
+    z-index: 10;
+    transform:translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.sec{
+    width: 3px;
+    height: 45%;
+    background-color: red;
+}
+.min{
+    width: 4px;
+    height: 40%;
+    background-color: black;
+}
+.hour{
+    width: 8px;
+    height: 30%;
+    background-color: gray;
+}
+.clock::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+    border-radius: 50%;
+}
