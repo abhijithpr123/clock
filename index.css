@@ -3,13 +3,17 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body{
+    background-color: beige;
+}
 
 .main {
+    margin: auto;
+    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-color: beige;
 }
 
 .clock {
@@ -126,4 +130,16 @@
 
 .num>div {
     transform: rotate(calc(-1 * var(--rotation)));
+}
+.box{
+    width: 250px;
+    height: 100px;
+    /* background-color: blue; */
+    border: solid gray 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;    
 }
